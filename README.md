@@ -1,6 +1,10 @@
 # Moaning "duur" service
 
-Moaning duur service allow generating sound when door is start opening or closing. Service 
+Moaning "duur" service allow generating sound when door is start opening or closing. Service is dedicated to any version of Raspberry Pi. Originally this service is maintained on Raspberry Pi model B. 
+#### Hardware
+What you need ?
+- HC-SR04 ultrasonic sensor
+
 ![sensor]
   - Type some Markdown on the left
   - See HTML in the right
@@ -54,6 +58,8 @@ $ NODE_ENV=production node app
 
 [sensor]: http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/11/hcsr04-e1416573917986-451x297.png?resize=451%2C297
 [service]: Moaning "duur" service
+
+[pins]: http://www.raspberrypi-spy.co.uk/wp-content/uploads/2012/06/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900.png
 
 
 
