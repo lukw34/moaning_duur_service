@@ -29,8 +29,11 @@ $ git clone [git-repo-url]
 $ cd moaning_duur_service
 $ npm install
 ```
+## 3. Todo
+- add configuration file (json)
+- add reading music directory
 
-[sensor]: http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/11/hcsr04-e1416573917986-451x297.png?resize=25x25
+[sensor]: https://www.element14.com/community/servlet/JiveServlet/showImage/38-22771-262582/HCSR04.jpg
 
 [pins]: http://www.raspberrypi-spy.co.uk/wp-content/uploads/2012/06/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900.png
 
