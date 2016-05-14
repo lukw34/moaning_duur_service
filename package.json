@@ -1,0 +1,29 @@
+{
+  "name": "moaning_duur_service",
+  "version": "1.0.0",
+  "description": "Generate sound when door is opening or closing",
+  "main": "sensor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lukw34/moaning_duur_service_node.git"
+  },
+  "keywords": [
+    "duur",
+    "moaning"
+  ],
+  "author": "ukasz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukw34/moaning_duur_service_node/issues"
+  },
+  "homepage": "https://github.com/lukw34/moaning_duur_service_node#readme",
+  "dependencies": {
+    "bluebird": "^3.3.5",
+    "machina": "^2.0.0-1",
+    "node-aplay": "^1.0.3",
+    "r-pi-usonic": "^2.5.0"
+  }
+}
