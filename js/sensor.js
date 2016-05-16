@@ -2,8 +2,11 @@ var devDoor = require('./door.js');
 var devDoorMachina = new devDoor.doorMachina;
 var usonic = require('r-pi-usonic');
 var promise = require('bluebird');
+var conf = require("../configuration.json");
 
-const INTERVAL_TIME = 1000;
+const INTERVAL_TIME = conf.intervalTime;
+const ECHO = conf.pins.echo;
+const TRIG = conf.pins.trig;
 
 var promiseWhile = function(condition, action) {
     var resolver = promise.defer();
@@ -31,7 +34,7 @@ usonic.init(err => {
     if (err) {
         throw err;
     } else {
-        var sensor = usonic.createSensor(23, 24, 1000);
+        var sensor = usonic.createSensor(ECHO, TRIG, 1000);
         console.log('Działa ' + devDoorMachina.state);
         var distance = sensor().toFixed(2);
         var lastMeasurement = 134;
@@ -53,7 +56,6 @@ usonic.init(err => {
                     });
                 }                
             });
-          
         }).catch(err => {
             console.log(err);
         })

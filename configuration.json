@@ -1,0 +1,15 @@
+{
+  "pins": {
+    "trig": 24,
+    "echo": 23
+  },
+  "parameters": {
+    "closeDoorDistance": 134,
+    "startOpeningDistance": 42,
+    "openDistanceHigh": 116,
+    "openDistanceLow": 108,
+    "delta": 10
+  },
+  "intervalTime": 400,
+  "musicDir": "/home/ukasz/MyProjects/moaning_duur_service/music/"
+}
