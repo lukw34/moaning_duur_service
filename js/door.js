@@ -1,6 +1,7 @@
 var machina = require('machina');
 var soundPlayer = require('./soundPlayer.js');
 var conf = require("../configuration.json");
+var fs = require('fs');
 
 const CLOSE_DISTANCE = conf.parameters.closeDoorDistance;
 const START_OPENING_DISTANCE = conf.parameters.startOpeningDistance;
@@ -11,6 +12,7 @@ const DIRECTORY = conf.musicDir;
 
 getMusic = () => {
     var musics = fs.readdirSync(DIRECTORY);
+    console.log(musics);
     return DIRECTORY + musics[Math.floor(Math.random() * musics.length)];
 };
 
@@ -67,6 +69,8 @@ exports.stateChange = (last, actual, door) => {
             }
 
             return defaultPromise;
+
+        console.log('end');
     }
 };
 

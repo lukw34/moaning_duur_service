@@ -1,1 +1,1 @@
-require('./js/sensor');
+require('./js/sensor'); 

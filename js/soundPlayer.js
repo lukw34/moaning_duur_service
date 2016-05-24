@@ -7,8 +7,8 @@ fs.writeFile('./moaning.door.logs.txt', 'Moaning dur logs\n', err => {
 });
 
 exports.play = path => {
-    var time = new Date();
 
+    var time = new Date();
     return new Promise((resolve, reject) => {
         var log = '[' + time + ']: ';
 

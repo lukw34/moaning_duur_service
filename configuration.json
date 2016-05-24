@@ -11,5 +11,5 @@
     "delta": 10
   },
   "intervalTime": 400,
-  "musicDir": "/home/ukasz/MyProjects/moaning_duur_service/music/"
+  "musicDir": "/home/pi/moaning_duur_service/music/"
 }

@@ -24,6 +24,7 @@
     "bluebird": "^3.3.5",
     "machina": "^2.0.0-1",
     "node-aplay": "^1.0.3",
-    "r-pi-usonic": "^2.5.0"
+    "r-pi-usonic": "^2.5.0",
+    "rpi-gpio": "^0.7.0"
   }
 }
