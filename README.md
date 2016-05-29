@@ -57,7 +57,8 @@ $ sudo node index.js
 ## 3. Todo
 - music from db
 
-## 4.  
+## 4.  Common problems
+- The most common problem is connected with node version. This code are working perfectly with version 5.11 
 
 
 [sensor]: https://www.element14.com/community/servlet/JiveServlet/showImage/38-22771-262582/HCSR04.jpg
