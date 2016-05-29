@@ -29,9 +29,36 @@ $ git clone [git-repo-url]
 $ cd moaning_duur_service
 $ npm install
 ```
+#### Configuration
+You can configure every important parametes in configuration.json file.
+```json
+{
+  "pins": {
+    "trig": number of GPIO when trig is connected(default: 23),
+    "echo": number of GPIO when echo is connected(default: 24)
+  },
+  "parameters": {
+    "closeDoorDistance": 134,
+    "startOpeningDistance": 42,
+    "openDistanceHigh": 116,
+    "openDistanceLow": 108,
+    "delta": 10
+  },
+  "intervalTime": interval between measurement(default: 400),
+  "musicDir": absolute path directory when are stored file
+}
+```
+You should individualy configure parameters ! 
+#### Run
+It is very important to run as root.
+```sh
+$ sudo node index.js
+```
 ## 3. Todo
-- add configuration file (json)
-- add reading music directory
+- music from db
+
+## 4.  
+
 
 [sensor]: https://www.element14.com/community/servlet/JiveServlet/showImage/38-22771-262582/HCSR04.jpg
 
